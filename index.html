@@ -17,19 +17,18 @@ html, body {
   overflow: hidden;
 }
 
-.link {
+a {
   color: #8b0000;
   font-family: monospace;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   text-decoration: none;
-  text-align: center;
+  word-break: break-all;
   animation: flicker 1.5s infinite;
-  transition: 0.3s;
 }
 
-.link:hover {
+a:hover {
   color: red;
-  text-shadow: 0 0 15px red;
+  text-shadow: 0 0 10px red;
 }
 
 @keyframes flicker {
@@ -44,7 +43,7 @@ html, body {
 
 <body>
 
-<a href="https://youtu.be/ziR0Z2DzJ84?si=dTpU8raymDkRmU2L" target="_blank" class="link">
+<a href="https://youtu.be/ziR0Z2DzJ84?si=dTpU8raymDkRmU2L" target="_blank">
 https://youtu.be/ziR0Z2DzJ84?si=dTpU8raymDkRmU2L
 </a>
 
